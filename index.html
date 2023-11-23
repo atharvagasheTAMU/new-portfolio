@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* CSS styles are included within the HTML for simplicity */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Short description about yourself.</p>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <p>List your skills here.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <p>Details of your projects.</p>
+    </section>
+
+    <section id="publications" class="container">
+        <h2>Publications</h2>
+        <p>List your publications here.</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>Your contact information.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
