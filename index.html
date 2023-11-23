@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         .navbar-custom {
             background-color: #2a3f54;
@@ -21,11 +22,15 @@
         .content-section {
             padding: 2rem 0;
         }
+
+        body {
+            padding-top: 80px;
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Your Name</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -35,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
                 </ul>
             </div>
         </div>
@@ -46,11 +51,28 @@
 
     <div class="container mt-4">
         <div class="jumbotron">
-            <img src="Profilepic.jpg" alt="Atharva Agashe" class="img-fluid rounded-circle"
+            <img src="/assets/img/profilepic.jpg" alt="Atharva Agashe" class="img-fluid rounded-circle"
                 style="width: 150px; height: 150px;"> <!-- Profile picture -->
             <h1 class="display-4">Atharva Agashe</h1>
+            <p>
+                <i class="fas fa-phone"></i> +1-979-344-9611 <br>
+                <i class="fas fa-envelope"></i> atharvagashe22@tamu.edu <br>
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/atharvagashe22"
+                    target="_blank">www.linkedin.com/in/atharvagashe22</a>
+            </p>
             <p class="lead">Graduate Student, Texas A&M University</p>
             <hr class="my-4">
+            <p>As an emerging computer engineering graduate, my journey is characterized by a strong affinity for
+                software development, cloud technologies, and a growing interest in the fields of data science and
+                machine learning. Through my academic and hands-on experiences, I have gained a foundational
+                understanding of cloud computing and software architecture, complemented by an emerging expertise in
+                machine learning and deep learning. This unique combination of skills enables me to innovate in the
+                development and implementation of web applications, leveraging cloud platforms for enhanced efficiency
+                and scalability. Passionate about the intersection of technology and data-driven insights, I am
+                committed to harnessing these tools to solve real-world challenges and contribute to advancements in the
+                tech industry.</p>
+            <hr class="my-4">
+
             <p><strong>Technical Skills:</strong> Java, Python, C++, C, SQL, Angular, Flask, Node.js, Express, Spring,
                 Spring Boot, MySQL, PostgreSQL, MongoDB, Numpy, Pandas, Matplotlib, TensorFlow, Scikit-Learn, OpenCV,
                 Kafka, Redis, Docker, Kubernetes, AWS</p>
@@ -86,7 +108,15 @@
         <!-- Projects Section -->
         <section id="projects">
             <h2>Projects</h2>
-            <p><strong>Evaluating Machine Learning Models for Apparel Classification: A CNN and KNN Study:</strong>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong>Evaluating Machine Learning Models for Apparel Classification: A CNN and KNN Study:</strong>
+                </div>
+                <div class="col-md-6">
+                    </strong>Texas A&M University Fall 2023</strong>
+                </div>
+            </div>
+            <p>
                 Engineered and benchmarked machine learning models for image classification on the Fashion MNIST
                 dataset, achieving a 92.5% accuracy with a custom-designed Convolutional Neural Network (CNN).
                 Skillfully conducted hyperparameter tuning and K-fold cross-validation to optimize model parameters,
@@ -99,9 +129,17 @@
                 metrics<br>
                 <strong>Skills & Technologies:</strong> Machine LEarning, Deep Learning, Data Augmentation,
                 Regularization, EDA, KNN, CNN, Tensorflow, Keras, Numpy, Pandas, Matplotlib, Scikit-Learn<br>
-                <a href="https://github.com/a-agashe/FinCare">Repository</a>
+                <a href="https://rithvik23.github.io/ECENGroup32.github.io/">Project Website</a>
             </p>
-            <p><strong>Advanced Algorithm Design for Piecewise Linear Regression:</strong>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong>Advanced Algorithm Design for Piecewise Linear Regression:</strong>
+                </div>
+                <div class="col-md-6">
+                    </strong>Texas A&M University Fall 2023</strong>
+                </div>
+            </div>
+            <p>
                 Showcased proficiency in the design and analysis of algorithms through the creation of an advanced
                 multi-line fitting linear regression model, adeptly partitioning data points into optimal segments. This
                 initiative aimed to enhance the predictive accuracy of segmented linear models, skillfully partitioning
@@ -109,16 +147,33 @@
                 mitigating overfitting and maintaining model simplicity, showcasing my strategic acumen in crafting
                 algorithms that significantly boost efficiency and adaptability in complex data modeling.
                 <br>
-                <strong>Skills & Technologies:</strong> Algorithm Design, Mathematical Modeling, Optimization Techniques, Data Visualization, Linear Regression <br>
-                <a href="https://github.com/a-agashe/FinCare">Repository</a>
+                <strong>Skills & Technologies:</strong> Algorithm Design, Mathematical Modeling, Optimization
+                Techniques, Data Visualization, Linear Regression <br>
+                <a href="https://github.com/atharvagasheTAMU/MultiLineLinearRegression">Project Website</a>
             </p>
-            <p><strong>FinCare:</strong> A Credit Card Management System designed to help customers purchase various
+            <div class="row">
+                <div class="col-md-6">
+                    <strong>FinCare:</strong>
+                </div>
+                <div class="col-md-6">
+                    </strong>LTI January 2021</strong>
+                </div>
+            </div>
+            <p> A Credit Card Management System designed to help customers purchase various
                 products with No-Cost-Emi options based on the card selected during registration. <br>
                 <strong>Skills & Technologies:</strong> Oracle SQL Developer, Spring Boot, Hibernate/JPA, J2EE, Maven,
                 Jenkins,
                 RESTful Web Services, Angular 8, HTML, CSS, JavaScript, JQuery. <br>
                 <a href="https://github.com/a-agashe/FinCare">Repository</a>
             </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong>FarmBot:</strong>
+                </div>
+                <div class="col-md-6">
+                    </strong>PICT 2020</strong>
+                </div>
+            </div>
             <p><strong>FarmBot:</strong> Designed and implemented a versatile smart robot for tasks such as plant
                 watering, seed sowing, and real-time
                 monitoring of soil moisture. Integrated an array of sensors and actuators with Raspberry Pi, showcasing
